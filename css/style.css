@@ -292,4 +292,104 @@ header{
   margin-bottom: 1.5rem;
   width:86%;
  }
- .about-btn{}
+#gellary{
+  margin-top:15rem;
+}
+.gellary-title{
+  margin-bottom: 2rem;
+}
+.gellary-top p{
+  margin-bottom: 4rem;
+  width: 50%;
+}
+.gellary-bottom{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:5rem;
+  place-items: center;
+}
+.gellary-img{
+  width:32rem;
+  border: 1rem solid var(--color-bg-4);
+  filter: saturate(0) brightness(0.5);
+  transition: var(--transition); 
+}
+
+.gellary-img:hover{
+  filter:saturate(1) brightness(1);
+}
+#collage{
+  margin-top:15rem;
+}
+.collage-top{
+  text-align: right;
+}
+.collage-title{
+  margin-bottom:2rem;
+}
+.collage-top p{
+  margin-bottom: 5rem;
+  padding-left:50%;
+}
+.collage-bottom{
+  display: grid;
+  grid-template-areas: 
+  "c1 c2 cv"
+  "ch ch cv"
+  "ch ch cv"
+  "c3 c4 c5"
+  ;
+  gap:3rem;
+}
+.collage-img:nth-child(1) {
+  grid-area: c1;
+}
+
+.collage-img:nth-child(2) {
+  grid-area: c2;
+}
+
+.collage-img:nth-child(3) {
+  grid-area: c3;
+}
+
+.collage-img:nth-child(4) {
+  grid-area: c4;
+}
+
+.collage-img:nth-child(5) {
+  grid-area: c5;
+}
+
+.collage-img:nth-child(6) {
+  grid-area: ch;
+}
+
+.collage-img:nth-child(7) {
+  grid-area: cv;
+}
+
+.collage-img {
+  filter: saturate(0) brightness(0.5);
+  transition: var(--transition);
+}
+
+.collage-img:hover {
+  filter: saturate(1) brightness(1);
+  border: 0.5rem solid var(--color-bg-4)
+}
+.collage-img img{
+  height: 100%;
+}
+footer {
+  margin-top: 10rem;
+  
+}
+.footer-container{
+  border-top: 0.5rem solid var(--color-bg-4);
+}
+.last-para{
+    padding: 40px;
+    text-align: center;
+
+}
