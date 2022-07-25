@@ -127,7 +127,7 @@ nav {
 .nav-social a:hover {
   box-shadow: 0 1rem 1rem rgba(0 0 0 / 0.5);
 }
-
+/*=============HEADER START============*/
 header{
   width: 100vw;
   height:100vh;
@@ -235,3 +235,61 @@ header{
   top:0;
   left:21rem;
 }
+/*=============ABOUT START============*/
+#about{
+  margin-top:20rem;
+}
+.about-container{
+  display: grid;
+  grid-template-columns: 43% 53%;
+  gap:4%;
+}
+.about-left{
+  position: relative;
+}
+.about-bg-sm{
+  width: 16rem;
+  height:22rem;
+  background-color: var(--color-bg-2);
+  position: absolute;
+  left:0;
+  bottom:0;
+ }
+ .about-img-lg{
+  width:30rem;
+  position:relative;
+  left:1rem;
+  bottom:1rem;
+  filter: saturate(0) brightness(0.5);
+  transition: var(--transition);
+ }
+ .about-img-md{
+  width: 22rem;
+  height:22rem;
+  overflow: hidden;
+  position: absolute;
+  left:16rem;
+  bottom:8rem;
+  box-shadow: 2rem 2rem 2rem rgba(0 0 0 / 0.2);
+ }
+.about-left:hover .about-img-md {
+  opacity: 0;
+ }
+ .about-left:hover .about-img-lg{
+  filter: saturate(1) brightness(1);
+  border:0.8rem solid var(--color-bg-4);
+  box-shadow: 1rem 1rem 3rem rgba(0 0 0 / 0.3);
+  left:0;
+  bottom:0;
+ }
+ .about-right{
+  margin-left: 5rem;
+ }
+.about-title{
+  margin-bottom: 3rem;
+}
+ .about-right p{
+  margin-bottom: 1.5rem;
+  width:86%;
+ }
+ .about-btn{}
